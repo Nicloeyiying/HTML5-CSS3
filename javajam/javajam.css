@@ -1,0 +1,112 @@
+/* CSS Document */
+body{
+	background-color:#f5f5dc;
+	color:#2e0000;
+	font-family:Verdana, Arial, sans-serif;
+	background-image:url(images/javabackground.gif);
+}
+nav{
+	font-weight:bold;
+	text-align:center;
+	padding:10px;
+	float:left;
+	width:160px;
+}
+nav ul{
+	padding-left:0;
+	font-size:1.2em;
+	list-style-type:none;
+}
+nav a{
+	text-decoration:none;
+}
+nav a:link{
+	color:#795240;
+}
+nav a:visited{
+	color:#a58366;
+}
+nav a:hover{
+	color:#f5f5dc;
+}
+header{
+	background-color:#d2b48c;
+}
+footer{
+	background-color:#d2b48c;
+	color:#000;
+	font-size:.60em;
+	font-style:italic;
+	text-align:center;
+	padding:10px;
+}
+footer a:link{
+	color:#2e0000;
+}
+footer a:visited{
+	#000;
+}
+footer a:hover{
+	color:#f5f5dc;
+}
+h1{
+	font-family:Georgia, "Times New Roman", serif;
+	height:100px;
+	margin:0;
+	background-image:url(images/javalogo.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+}
+h2{
+	font-family:Georgia, "Times New Roman", serif;
+}
+h3{
+	background-color:#e6d6a9;
+	text-transform:uppercase;
+}
+dt{
+	font-weight:bold;
+}
+/*ul{
+	list-style-image:url(images/marker.gif);
+}*/
+#wrapper{
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	background-color:#e2d2b0;
+	min-width:960px;
+	max-width:2048px;
+	box-shadow:3px 3px 3px #2e0000;
+}
+main{
+	padding:20px;
+	display:block;
+	background-color:#f5f5dc;
+	margin-left:175px;
+}
+#hero img{
+	float:left;
+	padding-right:2em;
+}
+#hero ul{
+	list-style-position:inside;
+}
+#hero div{
+	overflow:auto;
+	font-size:90%;
+	padding-left:5%;
+	padding-right:5%;
+}
+#hero{
+	height:300px;
+	color:#f5f5dc;
+	background-image:url(images/heroroad.jpg);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+.news{
+	padding-left:20%;
+	padding-right:20%;
+}
