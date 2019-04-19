@@ -195,3 +195,13 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 		display: none; 
 	}
 }
+table {
+	margin: auto; 
+	width: 80%; 
+}
+td, th {
+	padding: 10px; 
+}
+tr:nth-of-type(odd) {
+	background-color: #d2b48c; 
+}
