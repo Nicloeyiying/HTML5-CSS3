@@ -194,6 +194,13 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 	#desktop {
 		display: none; 
 	}
+	label {
+		float: none; 
+		text-align: left; 
+	}
+	input[type="submit"] {
+		margin-left: 0;
+	}
 }
 table {
 	margin: auto; 
@@ -204,4 +211,18 @@ td, th {
 }
 tr:nth-of-type(odd) {
 	background-color: #d2b48c; 
+}
+label {
+	float: left; 
+	display: block; 
+	text-align: left; 
+	width: 120px; 
+	padding-right: 20px;
+}
+input, textarea {
+	display: block; 
+	margin-bottom: 20px;
+}
+input[type="submit"] {
+	margin-left: 140px;
 }
