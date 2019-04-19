@@ -184,4 +184,21 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 		display: none; 
 	}
 }
-
+table {
+	border: 1px solid #39c; 
+	width: 80%; 
+	border-spacing: 0; 
+}
+td, th {
+	padding: 5px; 
+	border: 1px solid #39c; 
+}
+td {
+	text-align: center; 
+}
+.text {
+	text-align:left; 
+}
+tr:nth-of-type(odd) {
+	background-color: #f5fafc; 
+}
