@@ -106,7 +106,92 @@ main{
 	background-size:100% 100%;
 	background-repeat:no-repeat;
 }
-.news{
+section{
 	padding-left:20%;
 	padding-right:20%;
+	overflow: auto; 
+	font-size: 90%;
+}
+}
+header, main, nav, footer, figure, figcaption, aside, section, article {
+	display:block;
+}
+#mobile {
+	display:none; 
+}
+#desktop {
+	display: inline; 
+}
+@media only screen and (max-width: 64em) {
+	body {
+		margin: 0; 
+		background-color: #d2b48c; 
+		background-image: none; 
+	}
+	#wrapper {
+		min-width: 0;
+		width: auto; 
+		box-shadow: none; 
+	}
+	h1 {
+		margin: 0; 
+		background-image:url(images/javalogomobile.gif); 
+	}
+	main {
+		margin-left: 0;
+	}
+	nav {
+		float: none; 
+		width: auto; 
+		padding: 0; 
+	}
+	nav ul {
+		text-align: center; 
+	}
+	nav li {
+		display: inline; 
+		padding: 0 0.75em; 
+	}
+}
+@media only screen and (max-width: 37.5em) {
+	nav li {
+		display:inline-block; 
+		width: 5em; 
+		font-size: 120%; 
+		text-align: center; 
+		box-shadow: 2px 2px 2px #300; 
+		background-color: #f5f5dc; 
+		margin: 1%; 
+		padding: 2.5%; 
+	}
+	nav a {
+		display: block;
+	}
+	nav ul li a:hover {
+		color: #333300; 
+	}
+	main a:link {
+		color: #fff;
+	}
+	main a:visited {
+		color: #eaeaea; 
+	}
+	main a:hover {
+		color: #ffd700; 
+	}
+	section {
+		padding: 0; 
+	}
+	section img {
+		display: none;
+	}
+	#hero {
+		height: auto; 
+	}
+	#mobile {
+		display: inline; 
+	}
+	#desktop {
+		display: none; 
+	}
 }
