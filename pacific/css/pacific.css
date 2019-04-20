@@ -8,7 +8,7 @@ body{
 header{
 	background-color:#003;
 	color:#fff;
-	background-image:url(images/sunset.jpg); 
+	background-image:url(../images/sunset.jpg); 
 	background-position:right; 
 	background-repeat:no-repeat;
 	height:60px;
@@ -22,7 +22,8 @@ nav{
 	width:160px;
 }
 nav a{
-	text-decoration:none;
+	text-decoration:none; 
+	transition: color 3s ease-out;
 }
 nav a:link{
 	color:#003;
@@ -60,9 +61,9 @@ h3{
 	font-family:Georgia, "Times New Roman", serif; 
 	color:#300; 
 }
-main ul{
-	list-style-image:url(images/marker.gif); 
-}
+/*main ul{
+	list-style-image:url(../images/marker.gif); 
+}*/
 footer{
 	font-weight:75%;
 	font-style:italic;
@@ -71,6 +72,7 @@ footer{
 	background-color:#FFF;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	padding:20px;
+	clear:both; 
 }
 #contact{
 	font-weight:90%;
@@ -92,21 +94,21 @@ main{
 }
 #homehero{
 	height:300px;
-	background-image:url(images/coasthero.jpg);
+	background-image:url(../images/coasthero.jpg);
 	background-size:100% 100%;
 	background-repeat:no-repeat;
 	margin-left:190px;
 }
 #yurthero{
 	height:300px;
-	background-image:url(images/yurthero.jpg);
+	background-image:url(../images/yurthero.jpg);
 	background-size:100% 100%;
 	background-repeat:no-repeat;
 	margin-left:190px;
 }
 #trailhero{
 	height:300px;
-	background-image:url(images/trailhero.jpg);
+	background-image:url(../images/trailhero.jpg);
 	background-size:100% 100%;
 	background-repeat:no-repeat;
 	margin-left:190px;
@@ -120,6 +122,86 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 #desktop {
 	display:inline;
 }
+table {
+	border: 1px solid #39c; 
+	width: 80%; 
+	border-spacing: 0; 
+}
+td, th {
+	padding: 5px; 
+	border: 1px solid #39c; 
+}
+td {
+	text-align: center; 
+}
+.text {
+	text-align:left; 
+}
+tr:nth-of-type(odd) {
+	background-color: #f5fafc; 
+}
+label {
+	float: left; 
+	display: block; 
+	text-align: right; 
+	width: 120px; 
+	padding-right: 20px; 
+}
+input, textarea {
+	display: block; 
+	margin-bottom: 20px;
+}
+input[type="submit"] {
+	margin-left: 140px; 
+}
+video, embed {
+	float: right; 
+	margin-left: 20px; 
+}
+#gallery {
+	height: 200px; 
+	text-align: left; 
+	color: #006; 
+	position: relative; 
+}
+#gallery figure {
+	position: absolute;
+	float: right;
+	left: 280px;
+	text-align: center; 
+	opacity: .25; 
+}
+#gallery ul {
+	list-style-type: none;
+	width: 300px;
+}
+#gallery li {
+	display: inline; 
+	float: left; 
+	padding: 10px; 
+}
+#gallery img {
+	border-style: none; 
+}
+#gallery a {
+	text-decoration: none; 
+	color: #eaeaea; 
+	font-style: italic; 
+}
+#gallery span {
+	position: absolute; 
+	left: -1000px; 
+	opacity: 0; 
+	transition: opacity 3s ease-in-out; 
+}
+#gallery a:hover span {
+	position: absolute; 
+	top: 16px; 
+	left: 320px; 
+	text-align: center; 
+	opacity: 1;
+}
+/*媒体查询: 平板显示*/
 @media only screen and (max-width: 64em) {
 	body{
 		margin:0; 
@@ -151,6 +233,7 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 		margin-left: 0;
 	}
 }
+/*媒体查询: 手机显示*/
 @media only screen and (max-width: 37.5em) {
 	#header {
 		padding-top: 1em;
@@ -190,36 +273,7 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 	input[type="submit"] {
 		margin-left: 0; 
 	}
-}
-table {
-	border: 1px solid #39c; 
-	width: 80%; 
-	border-spacing: 0; 
-}
-td, th {
-	padding: 5px; 
-	border: 1px solid #39c; 
-}
-td {
-	text-align: center; 
-}
-.text {
-	text-align:left; 
-}
-tr:nth-of-type(odd) {
-	background-color: #f5fafc; 
-}
-label {
-	float: left; 
-	display: block; 
-	text-align: right; 
-	width: 120px; 
-	padding-right: 20px; 
-}
-input, textarea {
-	display: block; 
-	margin-bottom: 20px;
-}
-input[type="submit"] {
-	margin-left: 140px; 
+	img {
+		display: none; 
+	}
 }
