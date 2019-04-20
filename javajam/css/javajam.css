@@ -3,7 +3,7 @@ body{
 	background-color:#f5f5dc;
 	color:#2e0000;
 	font-family:Verdana, Arial, sans-serif;
-	background-image:url(images/javabackground.gif);
+	background-image:url(../images/javabackground.gif);
 }
 nav{
 	font-weight:bold;
@@ -19,6 +19,7 @@ nav ul{
 }
 nav a{
 	text-decoration:none;
+	transition: color 3s ease-out; 
 }
 nav a:link{
 	color:#795240;
@@ -53,7 +54,7 @@ h1{
 	font-family:Georgia, "Times New Roman", serif;
 	height:100px;
 	margin:0;
-	background-image:url(images/javalogo.gif);
+	background-image:url(../images/javalogo.gif);
 	background-position:center;
 	background-repeat:no-repeat;
 	text-indent:-9999px;
@@ -86,32 +87,31 @@ main{
 	background-color:#f5f5dc;
 	margin-left:175px;
 }
-#hero img{
+#hero{
+	height:300px;
+	color:#f5f5dc;
+	background-image:url(../images/heroroad.jpg);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+main img{
 	float:left;
 	padding-right:2em;
 }
-#hero ul{
+main ul{
 	list-style-position:inside;
 }
-#hero div{
+main div{
 	overflow:auto;
 	font-size:90%;
 	padding-left:5%;
 	padding-right:5%;
 }
-#hero{
-	height:300px;
-	color:#f5f5dc;
-	background-image:url(images/heroroad.jpg);
-	background-size:100% 100%;
-	background-repeat:no-repeat;
-}
 section{
-	padding-left:20%;
-	padding-right:20%;
 	overflow: auto; 
 	font-size: 90%;
-}
+	padding-left:20%;
+	padding-right:20%;
 }
 header, main, nav, footer, figure, figcaption, aside, section, article {
 	display:block;
@@ -122,6 +122,35 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 #desktop {
 	display: inline; 
 }
+table {
+	margin: auto; 
+	width: 80%; 
+}
+td, th {
+	padding: 10px; 
+}
+tr:nth-of-type(odd) {
+	background-color: #d2b48c; 
+}
+label {
+	float: left; 
+	display: block; 
+	text-align: left; 
+	width: 120px; 
+	padding-right: 20px;
+}
+input, textarea {
+	display: block; 
+	margin-bottom: 20px;
+}
+input[type="submit"] {
+	margin-left: 140px;
+}
+audio {
+	clear: both; 
+	padding-top: 20px; 
+}
+/*媒体查询: 平板显示*/
 @media only screen and (max-width: 64em) {
 	body {
 		margin: 0; 
@@ -135,7 +164,7 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 	}
 	h1 {
 		margin: 0; 
-		background-image:url(images/javalogomobile.gif); 
+		background-image:url(../images/javalogomobile.gif); 
 	}
 	main {
 		margin-left: 0;
@@ -153,6 +182,7 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 		padding: 0 0.75em; 
 	}
 }
+/*媒体查询: 手机显示*/
 @media only screen and (max-width: 37.5em) {
 	nav li {
 		display:inline-block; 
@@ -201,28 +231,4 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 	input[type="submit"] {
 		margin-left: 0;
 	}
-}
-table {
-	margin: auto; 
-	width: 80%; 
-}
-td, th {
-	padding: 10px; 
-}
-tr:nth-of-type(odd) {
-	background-color: #d2b48c; 
-}
-label {
-	float: left; 
-	display: block; 
-	text-align: left; 
-	width: 120px; 
-	padding-right: 20px;
-}
-input, textarea {
-	display: block; 
-	margin-bottom: 20px;
-}
-input[type="submit"] {
-	margin-left: 140px;
 }
